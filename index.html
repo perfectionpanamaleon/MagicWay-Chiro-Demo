@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI Voice Demo | magicway.ai</title>
+
+  <!-- Favicon & Icons -->
+  <link rel="icon" type="image/jpeg" href="magicway_favicon.jpeg" />
+  <link rel="apple-touch-icon" href="magicway_icon.jpeg" />
+
+  <!-- Social Media & Link Previews -->
+  <meta property="og:title" content="Live AI Voice Agent Demo | magicway.ai" />
+  <meta property="og:description" content="Experience our live conversational voice agent. Click to talk." />
+  <meta property="og:image" content="magicway_logo.jpeg" />
+  <meta property="og:type" content="website" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      background: #0f1117;
+      color: #f3f4f6;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      padding: 2.5rem 1.5rem;
+      text-align: center;
+    }
+    header {
+      width: 100%;
+      max-width: 900px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .brand-logo {
+      height: 44px;
+      width: auto;
+      object-fit: contain;
+      filter: drop-shadow(0 0 14px rgba(168, 85, 247, 0.25));
+    }
+    main {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      max-width: 680px;
+      margin: auto 0;
+    }
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 0.75rem;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      font-weight: 600;
+      color: #38bdf8;
+      background: rgba(56, 189, 248, 0.08);
+      border: 1px solid rgba(56, 189, 248, 0.2);
+      padding: 0.4rem 0.9rem;
+      border-radius: 9999px;
+      margin-bottom: 1.5rem;
+    }
+    .pulse-dot {
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: #38bdf8;
+      box-shadow: 0 0 8px #38bdf8;
+    }
+    h1 {
+      font-size: clamp(2.2rem, 5vw, 3.2rem);
+      font-weight: 600;
+      letter-spacing: -0.02em;
+      line-height: 1.2;
+      margin-bottom: 1.2rem;
+      background: linear-gradient(180deg, #ffffff 0%, #cbd5e1 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    p {
+      color: #94a3b8;
+      font-size: 1.1rem;
+      line-height: 1.6;
+      margin-bottom: 2rem;
+      font-weight: 300;
+    }
+    footer {
+      font-size: 0.85rem;
+      color: #64748b;
+    }
+    footer a {
+      color: #a855f7;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="magicway_logo_croped.jpg" alt="magicway.ai" class="brand-logo" />
+  </header>
+
+  <main>
+    <div class="badge">
+      <span class="pulse-dot"></span> Interactive Voice Demo
+    </div>
+    <h1>Talk to Our AI Assistant</h1>
+    <p>Click the phone/chat icon in the bottom corner of your screen to speak directly with our conversational agent in real-time.</p>
+  </main>
+
+  <footer>
+    Questions or custom solutions? Reach us at <a href="mailto:info@magicway.ai">info@magicway.ai</a>
+  </footer>
+
+  <!-- PASTE YOUR VOICERR.AI WIDGET CODE RIGHT BELOW THIS LINE -->
+<div id="ai-widget-container"></div>
+<script>
+  (function() {
+    var iframe = document.createElement('iframe');
+    iframe.src = 'http://voicerr.ai/embed/voice-widget/cmv6mppr602mxp2i89kn867qk';
+    iframe.style.cssText = 'position: fixed; bottom: 0; right: 0; width: 100vw; height: 100vh; border: none; z-index: 2147483647;';
+    iframe.allow = 'microphone';
+    iframe.title = 'Voice Assistant';
+    document.getElementById('ai-widget-container').appendChild(iframe);
+  })();
+</script>
+</body>
+</html>
